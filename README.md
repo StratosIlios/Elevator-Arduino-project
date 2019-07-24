@@ -17,12 +17,12 @@ The components that have being used are the following:
 
 Connection of the Elevator
 Pins connected to the ULN2003 Stepper Motor Driver Board: 2,3,4,5
-1N1->2
-1N2->4
-1N3->3
-1M4->5
-(+)->5V
-(-)->GND
+1. 1N1->2 
+2. 1N2->4 
+3. 1N3->3 
+4. 1M4->5 
+5. (+)->5V
+6. (-)->GND.
 
 
 
