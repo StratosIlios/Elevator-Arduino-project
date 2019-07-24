@@ -62,7 +62,7 @@ void setup(){
   Serial.println("You are in Ground Floor. Please enter your Destination Floor.");
   motor.setSpeed(120);
   pinMode(6,OUTPUT);
-  pinMode(7, OUTPUT);
+  pinMode(7,OUTPUT);
 }
 
 void loop(){
