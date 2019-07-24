@@ -13,7 +13,6 @@ int x=21;// The value when the difference from Current to Destination Flor isnt 
 int y=43;// The vallue when the difference from the Current to Destination Floor is +-2
 int d=x;
 
-
 /*Function that compares the Current with Destination floor, moves the Cabine to proper direction and also activates the Green and Red lights*/
 void CompareFloor(int DestinationFloor){
     if(onetime==true){
