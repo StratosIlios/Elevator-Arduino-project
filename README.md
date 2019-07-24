@@ -15,7 +15,7 @@ The components that have being used are the following:
 8. 1X Red Led 
 9. 1X Green Led
 
-Connection of the Elevator:
+Connection of the Elevator
 Pins connected to the ULN2003 Stepper Motor Driver Board: 2,3,4,5
 1N1->2
 1N2->4
