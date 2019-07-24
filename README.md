@@ -23,3 +23,5 @@ Pins connected to the ULN2003 Stepper Motor Driver Board: 2,3,4,5
 4. 1M4->5 
 5. (+)->5V
 6. (-)->GND.
+
+Video of the project:https://www.youtube.com/watch?v=pCejFojxJZU
