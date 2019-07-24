@@ -8,10 +8,11 @@ const int number_of_steps=200;// change this to fit the number of steps per revo
 Stepper motor(number_of_steps,2, 3, 4, 5);// initialize the stepper library on pins 2 through 5
 boolean onetime=true;
 int CurrentFloor;
+int Diff_Flrs;
 int x=21;// The value when the difference from Current to Destination Flor isnt +-2
 int y=43;// The vallue when the difference from the Current to Destination Floor is +-2
 int d=x;
-int Diff_Flrs;
+
 
 /*Function that compares the Current with Destination floor, moves the Cabine to proper direction and also activates the Green and Red lights*/
 void CompareFloor(int DestinationFloor){
