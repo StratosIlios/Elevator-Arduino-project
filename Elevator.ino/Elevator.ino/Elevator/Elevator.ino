@@ -18,7 +18,7 @@ void CompareFloor(int DestinationFloor){
     if(onetime==true){
        CurrentFloor=0;
        onetime=false;
-    }     
+     }     
     
 /* Define the distance of the floors */    
     Diff_Flrs=CurrentFloor-DestinationFloor;
@@ -31,29 +31,29 @@ void CompareFloor(int DestinationFloor){
            digitalWrite(6,HIGH);// Sets the red light on  
            digitalWrite(7,LOW);// Sets the green light off  
            motor.step(number_of_steps);          
-       }  
+         }  
        CurrentFloor=DestinationFloor;
-    }    
+     }    
     
 /* If Destination Floor is SMALLER than Current Floor then go DOWN*/    
     if (DestinationFloor<CurrentFloor){
        for(int i=0;i<=d;i++)
        {
-          digitalWrite(6,HIGH);// Sets the red light on 
-          digitalWrite(7,LOW);// Sets the green light off
-          motor.step(-number_of_steps);  
+         digitalWrite(6,HIGH);// Sets the red light on 
+         digitalWrite(7,LOW);// Sets the green light off
+         motor.step(-number_of_steps);  
        }   
        CurrentFloor=DestinationFloor;
-    }  
+     }  
     if (DestinationFloor==0){Serial.println("You arrived in Ground Floor. Please enter your Destination Floor.");}
     else{
          Serial.print("You arrived in Floor ");
          Serial.print(DestinationFloor);
          Serial.println(". Please enter your Destination Floor.");
-    }
-    digitalWrite(6,LOW);// Sets the red light off
-    digitalWrite(7,HIGH);// Sets the green light on
-    delay(1500);// Sets the delay in case that the user inserts the input continuously
+     }
+     digitalWrite(6,LOW);// Sets the red light off
+     digitalWrite(7,HIGH);// Sets the green light on
+     delay(1500);// Sets the delay in case that the user inserts the input continuously
 }
 
 void setup(){
@@ -70,8 +70,7 @@ void loop(){
    {      
      digitalWrite(7,HIGH);// Sets the green light on
      int button=Serial.parseInt();// Takes the value from keyboard from Serial Monitor
-     if(button==0||button==1||button==2)
-     {        
+     if(button==0||button==1||button==2){        
         CompareFloor(button);// Sets the input value to the Destination function      
         Serial.setTimeout(10000000);      
      }
