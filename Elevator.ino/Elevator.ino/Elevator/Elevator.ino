@@ -9,8 +9,8 @@ Stepper motor(number_of_steps,2, 3, 4, 5);// initialize the stepper library on p
 boolean onetime=true;
 int CurrentFloor;
 int Diff_Flrs;
-int x=21;// The value when the difference from Current to Destination Flor isnt +-2
-int y=43;// The vallue when the difference from the Current to Destination Floor is +-2
+int x=21;// The value when the difference between Current and Destination Flor is not +-2
+int y=43;// The value when the difference between Current and Destination Floor is +-2
 int d=x;
 
 /*Function that compares the Current with Destination floor, moves the Cabine to proper direction and also activates the Green and Red lights*/
